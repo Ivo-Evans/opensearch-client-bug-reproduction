@@ -1,0 +1,10 @@
+services:
+  os:
+    image: opensearchproject/opensearch:latest
+    environment:
+      discovery.type: single-node
+      plugins.security.disabled: "true"
+      OPENSEARCH_INITIAL_ADMIN_PASSWORD: "coRrecth0rseba++ery9.23.2007staple$"
+    ports:
+      - 9200:9200
+      - 9300:9300
